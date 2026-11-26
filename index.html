@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive CSS practice portfolio with 15 beginner, intermediate and challenging exercises.">
+  <title>CSS Lab — Practice Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="CSS Lab home"><span class="brand-mark">✳</span> css<span>lab</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#beginner">Beginner</a><a href="#intermediate">Intermediate</a><a href="#challenging">Challenging</a>
+    </nav>
+    <a class="header-cta" href="#about">My portfolio <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> LEARN • EXPERIMENT • CREATE</p>
+        <h1>Small steps.<br><em>Beautiful</em> websites.</h1>
+        <p class="hero-text">A little space to explore CSS, practise new skills and turn simple code into something lovely.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#beginner">Explore exercises <span>↓</span></a><a class="text-link" href="#about">About this project ↗</a></div>
+        <div class="hero-note"><span class="note-icon">✿</span><span><strong>15 practical exercises</strong><br>from the first selector to responsive layouts</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative abstract CSS illustration">
+        <div class="art-card art-card-back"><span class="tiny-label">STYLE / 01</span><div class="art-lines"><i></i><i></i><i></i></div></div>
+        <div class="art-circle"></div>
+        <div class="art-card art-card-front"><span class="code-tag">&lt;style&gt;</span><div class="art-swatch-row"><b></b><b></b><b></b></div><div class="art-code"><span>.you</span> {<br>&nbsp; create: <strong>freely</strong>;<br>}</div><span class="art-caption">made with curiosity ♡</span></div>
+        <span class="sparkle sparkle-one">✳</span><span class="sparkle sparkle-two">✦</span>
+      </div>
+    </section>
+
+    <section class="stats section-wrap" aria-label="Project overview">
+      <div><strong>15</strong><span>CSS exercises</span></div><div><strong>03</strong><span>Learning levels</span></div><div><strong>01</strong><span>Creative journey</span></div><p>Made to learn by doing <span>♡</span></p>
+    </section>
+
+    <section class="intro section-wrap">
+      <div><p class="eyebrow">THE COLLECTION</p><h2>Practice makes<br><em>progress.</em></h2></div>
+      <p class="intro-text">Each exercise demonstrates a core CSS idea. Explore the examples, resize your screen, hover over elements and notice how the styles work.</p>
+    </section>
+
+    <section class="exercise-section section-wrap" id="beginner">
+      <div class="section-heading"><div><p class="eyebrow">LEVEL 01 · START HERE</p><h2>Beginner <span>01—05</span></h2></div><p>The building blocks of styling.</p></div>
+      <div class="exercise-grid">
+        <article class="exercise-card"><div class="card-top"><span>01 / TYPOGRAPHY</span><span class="card-icon">Aa</span></div><h3>Text styling</h3><p class="demo-blue">CSS gives words a voice.</p><p class="card-description">Blue text, 18px, using the Arial font family.</p><code>font: 18px Arial;</code></article>
+        <article class="exercise-card"><div class="card-top"><span>02 / SELECTORS</span><span class="card-icon">✳</span></div><h3>Class selector</h3><p>Make a <mark class="highlight">special word</mark> stand out.</p><p class="card-description">The .highlight class adds a yellow background to selected words.</p><code>.highlight { background: yellow; }</code></article>
+        <article class="exercise-card"><div class="card-top"><span>03 / BOX MODEL</span><span class="card-icon">▣</span></div><h3>Box model basics</h3><div class="box-demo">I am a CSS box</div><p class="card-description">200px width · 10px padding · 2px border · 20px margin.</p><code>width + padding + border</code></article>
+        <article class="exercise-card"><div class="card-top"><span>04 / COLOUR</span><span class="card-icon">◒</span></div><h3>Three colour formats</h3><div class="colour-lines"><p class="hex">HEX · #ff5733</p><p class="rgb">RGB · rgb(0, 128, 255)</p><p class="hsl">HSL · hsl(120, 60%, 40%)</p></div><p class="card-description">The same text can be styled with different colour formats.</p></article>
+        <article class="exercise-card"><div class="card-top"><span>05 / INTERACTION</span><span class="card-icon">↗</span></div><h3>Link hover effect</h3><a class="hover-link" href="#beginner">Hover over this link ↗</a><p class="card-description">Move your pointer over the link to see it turn red.</p><code>a:hover { color: red; }</code></article>
+      </div>
+    </section>
+
+    <section class="exercise-section section-wrap" id="intermediate">
+      <div class="section-heading"><div><p class="eyebrow">LEVEL 02 · BUILD CONFIDENCE</p><h2>Intermediate <span>06—10</span></h2></div><p>Position, align and organise.</p></div>
+      <div class="exercise-grid">
+        <article class="exercise-card"><div class="card-top"><span>06 / POSITION</span><span class="card-icon">⌖</span></div><h3>Back to top</h3><p class="card-description">A fixed button stays in the bottom-right corner while you scroll.</p><code>position: fixed;</code></article>
+        <article class="exercise-card profile-card"><div class="avatar">A</div><p class="profile-kicker">CREATIVE LEARNER</p><h3>Aelina</h3><p class="profile-subtitle">Learning web design, one line at a time.</p><div class="profile-pills"><span>HTML</span><span>CSS</span><span>Curiosity</span></div><p class="card-description">Rounded corners, a soft shadow and centred text.</p></article>
+        <article class="exercise-card"><div class="card-top"><span>08 / FLEXBOX</span><span class="card-icon">↔</span></div><h3>Flexbox navigation</h3><nav class="mini-nav" aria-label="Example flex navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#beginner">Work</a></nav><p class="card-description">A horizontal menu with evenly spaced items.</p><code>display: flex;</code></article>
+        <article class="exercise-card"><div class="card-top"><span>09 / GRID</span><span class="card-icon">▦</span></div><h3>Two-column layout</h3><div class="grid-demo"><aside>Sidebar<br><small>30%</small></aside><div>Main content<br><small>70%</small></div></div><p class="card-description">A 30/70 split built with CSS Grid.</p><code>grid-template-columns: 30% 70%;</code></article>
+        <article class="exercise-card"><div class="card-top"><span>10 / RESPONSIVE</span><span class="card-icon">▯</span></div><h3>Media queries</h3><div class="responsive-demo"><span>Resize your browser</span><strong>Heading adapts</strong></div><p class="card-description">Below 600px, this example heading becomes smaller.</p><code>@media (max-width: 600px)</code></article>
+      </div>
+    </section>
+
+    <section class="exercise-section section-wrap" id="challenging">
+      <div class="section-heading"><div><p class="eyebrow">LEVEL 03 · EXPLORE MORE</p><h2>Challenging <span>11—15</span></h2></div><p>Bring everything together.</p></div>
+      <div class="exercise-grid">
+        <article class="exercise-card wide-card"><div class="card-top"><span>11 / FLEXBOX GALLERY</span><span class="card-icon">▧</span></div><h3>A little colour gallery</h3><div class="gallery-demo"><div>01</div><div>02</div><div>03</div><div>04</div></div><p class="card-description">Four columns on wider screens; two columns on smaller screens.</p><code>display: flex; flex-wrap: wrap;</code></article>
+        <article class="exercise-card"><div class="card-top"><span>12 / STICKY</span><span class="card-icon">⌑</span></div><h3>Sticky header</h3><div class="sticky-demo"><span>✳</span> I stay at the top</div><p class="card-description">The site header uses sticky positioning when scrolling.</p><code>position: sticky; top: 0;</code></article>
+        <article class="exercise-card"><div class="card-top"><span>13 / ANIMATION</span><span class="card-icon">✧</span></div><h3>Animated button</h3><button class="animated-button" type="button">Hover to feel it ✨</button><p class="card-description">The background colour fades smoothly over 0.5 seconds.</p><code>transition: background 0.5s;</code></article>
+        <article class="exercise-card"><div class="card-top"><span>14 / GRID PAGE</span><span class="card-icon">▤</span></div><h3>Landing page layout</h3><div class="landing-demo"><header>Header</header><aside>Sidebar</aside><main>Main content</main><footer>Footer</footer></div><p class="card-description">Header, sidebar, main content and footer arranged with Grid.</p><code>display: grid;</code></article>
+        <article class="exercise-card"><div class="card-top"><span>15 / RESPONSIVE CARDS</span><span class="card-icon">▱</span></div><h3>Cards that adapt</h3><div class="responsive-cards"><div>Design</div><div>Learn</div><div>Create</div></div><p class="card-description">Cards sit in a row on desktop and stack on mobile.</p><code>flex-direction: column;</code></article>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about"><div class="about-mark">✳</div><div><p class="eyebrow">A NOTE FROM THE CREATOR</p><h2>Curiosity looks<br><em>good on you.</em></h2><p>This website is a CSS practice portfolio created to demonstrate 15 exercises across beginner, intermediate and challenging levels. Keep experimenting, keep asking questions, and remember: every developer starts somewhere.</p><span class="signature">Made with care & curiosity ♡</span></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">✳</span> css<span>lab</span></a><p>CSS Practice Portfolio · 15 exercises</p><a href="#top">Back to top ↑</a></footer>
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
+  <script src="script.js"></script>
+</body>
+</html>
